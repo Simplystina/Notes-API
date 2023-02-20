@@ -1,7 +1,10 @@
 # Notes-API
 
-This repo contains the api collection for a simple note app
+This repo contains the api collection for a simple note app that keeps details of a users notes.
 
+
+
+The core requirements of this application are listed below
 
 ## Requirements
 1. User should be able to register
