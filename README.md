@@ -46,4 +46,4 @@ run `npm run start:dev` or `nodemon` to start the server
 | userId | String | required |
 
 ## API Routes
-All routes and API details can be found at the documentation [here](https://documenter.getpostman.com/view/19697282/2s935uFfif#b6613990-d95b-4682-b0cb-3ad8c6462972)
+All routes and API details can be found at the documentation [here](https://documenter.getpostman.com/view/19697282/2s93CKNZNk)
