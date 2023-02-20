@@ -1,5 +1,5 @@
 const express = require("express")
-//const cors = require("cors")
+const cors = require("cors")
 const {connect} = require("./Database/database")
 const auth = require("./Middleware/auth")
 const bodyParser = require("body-parser")
@@ -20,6 +20,17 @@ const app = express()
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.json())
+
+
+app.options('*', cors()); // preflight OPTIONS; put before other routes
+app.use(function(req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT,PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    next();
+});
+
 
 app.use('/', authRouter)
 
