@@ -18,11 +18,11 @@ The core requirements of this application are listed below
 
 
 ## Setup
-Install NodeJS, mongodb
-pull this repo
-Open the folder on your local computer
-At the terminal, run `npm install` to install all packages
-run `npm run start:dev` or `nodemon` to start the server
+* Install NodeJS, mongodb
+* pull this repo
+* Open the folder on your local computer
+* At the terminal, run `npm install` to install all packages
+* run `npm run start:dev` or `nodemon` to start the server
 
 ## Base URL
 [https://notes-api-w63j.onrender.com](https://notes-api-w63j.onrender.com)
